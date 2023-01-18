@@ -1,0 +1,470 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+/* body{
+    min-height: 100vh;
+    background: url(./img/COV2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    /* background: #ffffff; */
+    background-image: linear-gradient( rgb(179, 84, 84), rgb(132, 132, 234));
+    box-shadow: 0px 5px 10px green;
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    /* background: url(./img/COVER.png) no-repeat;
+    background-size: auto; */
+
+}
+/* header .logo{
+    
+} */
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+    
+}
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    display: block;
+}
+header .navbar ul li a:hover{
+    background: #333;
+    color: #fff;
+}
+header .navbar ul li ul{
+    position: relative;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+header .navbar ul li:hover > ul, header .navbar ul li:focus-within > ul{
+    display: initial;
+}
+/* page1  */
+html{
+    scroll-behavior:smooth;
+}
+#page1{
+    width: 100%;
+    height: 700px;
+    border: 2px solid black; 
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    background-size: 100% 100%;
+    background: url(./img/COV2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: slider 12s linear infinite ;
+    
+}
+@keyframes slider{
+    
+    0%{background: url("./img/COV2.jpg") no-repeat;  background-size: cover; background-position: center;}
+
+    30%{background: url("./img/cov5.webp") no-repeat; background-size: cover; background-position: center; }
+
+    60%{background: url("./img/cover3.jpg") no-repeat; background-size: cover; background-position: center;}
+
+    75%{background: url("./img/cover4.jpg") no-repeat; background-size: cover; background-position: center;}
+}
+.page1-content{
+    width: 600px;
+    height: 600px;
+    /* border: 2px solid black; */
+    margin: 150px;
+    /* background-color: chartreuse;  */
+    /* transition: width 4s, height 4s; */
+    margin-left: 1050px;
+    margin-top: 90px;  
+}
+.page1-content h3{
+    color: rgba(159, 105, 169, 0.983); 
+    font-size: 60px;
+    font-family: 'Permanent Marker', cursive;
+}
+.page1-content h3:hover{
+    width: 400px;
+    height: 600px;
+    color: rgb(69, 94, 78);
+    background-color: rgba(165, 130, 165, 0.349);
+    
+    
+    /* opacity: 60%; */
+}
+#page2{
+    height: 1200px;
+    width: 100%;
+    /* border: 2px solid black; */
+    /* background-color: chocolate; */
+    background: url(./img/back3.jpg) no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    padding: 150px;
+}
+#page2 h1{
+    color: darkmagenta;
+    font-size: 50px;
+    text-align: center;
+    margin-top: -20px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-weight: bolder;
+    background-color: rgb(158, 138, 167);
+    font-family: 'Concert One', cursive;
+}
+#page2 h3{
+    color: darkmagenta;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+    text-transform: initial;
+    font-weight: bolder;
+    background-color: rgb(158, 138, 167); 
+    font-family: 'Concert One', cursive;
+}
+#page2 h1:hover{
+    color: rgb(224, 203, 13);
+}
+#page2 h3:hover{
+    color: rgb(224, 203, 13);
+}
+.page2-row1{
+    width: 100%;
+    height: 400px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+#page2-img1{
+    width: 250px;
+    height: 250px;
+    border: 10px solid rgb(183, 87, 169);
+    margin: 20px;
+    transition: transform 1s;
+    background-color: chartreuse;
+    
+}
+#page2-img1:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+/* #page2-img2{
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    margin: 20px;
+}
+#page2-img3{
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    margin: 20px;
+} */
+#page2-img1-topic{
+    /* border: 2px solid black; */
+    width: 200px;
+    height: 50px;
+    margin-top: -50px;
+}
+/* #page2-img1-topic a{
+    font-size: 100px;
+} */
+#page2-img1-topic a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+#page2-img1-topic a:hover{
+    text-decoration: underline;
+}
+
+.page2-row2{
+    width: 100%;
+    height: 400px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.subscribe{
+    width: 100%;
+    height: 150px;
+    background-color: gold;
+    text-align: center;
+    padding: 30px;
+}
+.page3{
+    width: 100%;
+    height: 700px;
+    border: 2px solid black;
+    background-color: rgb(218, 201, 204);
+    
+}
+.page3 h3{
+    padding: 20px;
+    font-family: 'Concert One', cursive;
+    color: darkmagenta;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: initial;
+    font-weight: bolder;
+    background-color: rgb(158, 138, 167); 
+    /* font-family: 'Concert One', cursive; */
+}
+.page3 h3:hover{
+    color: rgb(224, 203, 13);
+}
+.page3 .card img{
+    width: 130px;
+    height: 130px;
+    align-content: center;
+    margin: 20px;
+    margin-left: 90px;
+
+}
+.page3-card{
+    margin-top: -10px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card .card-body a:hover{
+    color: black;
+}
+/* #page3-button{
+    
+} */
+#page4{
+    width: 100%;
+    /* height: 50px; */
+    height: 700px;
+    border: 2px solid black;
+    background: url(./img/page4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    /* transition: height 3s; */
+}
+/* #page4:hover{
+    
+    height: 700px;
+} */
+.page4-story2{
+    width: 50%;
+    height: 600px;
+    /* border: 2px solid black; */
+    padding: 50px;
+    /* margin: 50px; */
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+    background-color: rgba(133, 161, 183, 0.373) ; 
+}
+.page4-story{
+    width: 50%;
+    height: 600px;
+    /* border: 2px solid black; */
+    padding: 50px;
+    margin: 50px;
+    margin-top: -600px;
+    margin-left: 50%;
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+    /* background-color: rgba(133, 161, 183, 0.373) ;  */
+    
+}
+#page5{
+    width: 100%;
+    height: 1500px;
+    border: 2px solid rgb(0, 0, 0);
+    /* background-color: rgb(226, 203, 172); */
+    /* margin-top:500px; */
+    padding: 50px;
+    background: url(./img/COVER.png) no-repeat;
+    background-size: cover;
+
+}
+.page5-gallery{
+    width: 100%;
+    height: 1400px;
+    /* background-color: rgb(197, 205, 92); */
+    /* border: 2px solid black; */
+    
+    
+}
+#page5-row1{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.page5-gallery .img1{
+    width: 200px;
+    height: 250px;
+    border: 2px solid black;
+    margin: 10px;
+    /* rotate: -20deg; */
+    /* transform: rotate(30deg); */
+
+}
+.page5-gallery .img2{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 10px;
+    /* rotate: -10deg; */
+    /* transform: rotate(30deg); */
+
+}
+.page5-gallery .img3{
+    width: 200px;
+    height: 250px;
+    border: 2px solid black;
+    margin: 10px;
+    /* rotate: 30deg; */
+    /* transform: rotate(30deg); */
+
+}
+.page5-gallery .img4{
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 10px;
+    /* rotate: 40deg; */
+    /* transform: rotate(30deg); */
+
+}
+#page5-row2{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+}
+.page5-gallery .img5{
+    width: 250px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 10px;
+    /* rotate: 40deg; */
+    /* transform: rotate(30deg); */
+
+}
+.page5-gallery .img6{
+    width: 500px;
+    height: 400px;
+    border: 2px solid black;
+    margin: 10px;
+    /* rotate: 40deg; */
+    /* transform: rotate(30deg); */
+
+}
+.page5-gallery .img7{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 10px;
+    /* rotate: 40deg; */
+    /* transform: rotate(30deg); */
+}
+.page5-gallery .img8{
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 10px;
+    /* rotate: 40deg; */
+    /* transform: rotate(30deg); */
+
+}
+#page5-row3{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    margin-top: 180px;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+}
+.page5-gallery .img9{
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 10px;
+    /* rotate: 40deg; */
+    /* transform: rotate(30deg); */
+}
+.page5-gallery .img10{
+    width: 400px;
+    height: 250px;
+    border: 2px solid black;
+    margin: 10px;
+    /* rotate: 40deg; */
+    /* transform: rotate(30deg); */
+}
+.page5-gallery .img11{
+    width: 350px;
+    height: 290px;
+    border: 2px solid black;
+    margin: 10px;
+    /* rotate: 40deg; */
+    /* transform: rotate(30deg); */
+}
+.page5-gallery .img12{
+    width: 380px;
+    height: 280px;
+    border: 2px solid black;
+    margin: 10px;
+    /* rotate: 40deg; */
+    /* transform: rotate(30deg); */
+}
+.page5-gallery h1{
+    padding: 20px;
+    font-family: 'Concert One', cursive;
+    color: darkmagenta;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: initial;
+    font-weight: bolder;
+    background-color: rgb(158, 138, 167);
+
+}
+.page5-gallery h1:hover{
+color: rgb(224, 203, 13);
+}
+
+#page6{
+    width: 100%;
+    height: 500px;
+    border: 2px solid black;
+}
